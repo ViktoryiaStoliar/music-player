@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-family: "Inter";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 1028px;
+  height: 562px;
+  background-color: #454545;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 540px;
+  height: 169px;
+  background-color: #FFFEF8;
+  margin: 244px 196.5px;
+  border-radius: 14.6957px;
+}
+.wrapper .img {
+  background-image: url(./img/left_part.png);
+  width: 169px;
+  height: 169px;
+  border-radius: 14.6957px 0px 0px 14.6957px;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+.wrapper .center .artist {
+  width: 149px;
+  height: 22px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.wrapper .center .songTitle {
+  width: 72px;
+  height: 17px;
+  top: 26.94px;
+  left: 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #454545;
+}
+.wrapper .center .trackLine {
+  width: 257px;
+  height: 3px;
+  left: 0px;
+  top: 0.23px;
+  background: #DADADA;
+}
+.wrapper .center .play {
+  width: 38px;
+  height: 38px;
+  left: calc(50% - 19px - 0.49px);
+  top: 20px;
+  background: url(./img/playBtn.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
