@@ -32,42 +32,102 @@ body {
     }
 
     .center {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        height: 169px;
+        width: 371px;
+        padding-left: 32.5px;
+
         .artist {
             width: 149px;
             height: 22px;
             font-weight: 700;
             font-size: 18px;
-            line-height: 22px;
             color: #000000;
+            padding-top: 17.8px;
+        }
+
+        .waves{
+            background-image: url(./img/spotifyBtn.png);
+            background-repeat: no-repeat;
+            background-size:contain;
+            width: 20.61px;
+            height: 20.61px;
+            margin-left: 135px;
         }
 
         .songTitle {
             width: 72px;
             height: 17px;
-            top: 26.94px;
-            left: 0px;
+            padding-top: 5px;
             font-weight: 400;
             font-size: 14px;
             line-height: 17px;
             color: #454545;
+
         }
 
         .trackLine {
             width: 257px;
             height: 3px;
-            left: 0px;
-            top: 0.23px;
+            margin-top: 25.3px;
+            padding-top: 0.23px;
             background: #DADADA;
         }
 
-        .play {
-            width: 38px;
-            height: 38px;
-            left: calc(50% - 38px/2 - 0.49px);
-            top: 20px;
-            background: url(./img/playBtn.png);
-            background-repeat: no-repeat;
-            background-size: contain;
+        .barControl {
+            display: flex;
+            // justify-content: space-between;
+            margin-top: 16.77px;
+            margin-bottom: 24.5px;
+
+            .repeatBtn {
+                background-image: url(./img/repeat.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 24px;
+                height: 24px;
+                padding-right: 54px;
+            }
+
+            .prevBtn {
+                background-image: url(./img/LeftBtn.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 35.51px;
+                height: 34.29px;
+                padding-right: 20px;
+            }
+
+            .playBtn {
+                background-image: url(./img/playBtn.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 35.51px;
+                height: 34.29px;
+                padding-right: 20px;
+            }
+
+            .nextBtn {
+                background-image: url(./img/nextBtn.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 35.51px;
+                height: 34.29px;
+                padding-right: 20px;
+                padding-right: 58px;
+            }
+
+            .like {
+                background-image: url(./img/like.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 24px;
+                height: 24px;
+                right: 0px;
+                top: 27.23px;
+            }
         }
     }
 }
